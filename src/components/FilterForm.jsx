@@ -10,15 +10,15 @@ const FilterForm = ({ filterText, onFilterChange }) => {
         value={filterText}
         onChange={(e) => onFilterChange(e.target.value)}
         style={{
-
+          width: '100%',
+          padding: '10px',
+          fontSize: '14px',
+          borderRadius: '4px',
+          border: '1px solid #ccc',
+          boxSizing: 'border-box'
 
 
         }}
-
-
-
-
-
 
    );
 };
