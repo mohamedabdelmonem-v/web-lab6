@@ -6,6 +6,8 @@ const PostList = ({ posts, loading, error }) => {
   if (loading) {
     return <p>Loading posts...</p>;
   }
-
+  if (error) {
+    return <p style={{ color: 'red' }}>Error: {error}</p>;
+  }
 
 };
