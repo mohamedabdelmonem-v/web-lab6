@@ -16,9 +16,8 @@ const FilterForm = ({ filterText, onFilterChange }) => {
           borderRadius: '4px',
           border: '1px solid #ccc',
           boxSizing: 'border-box'
-
-
         }}
-
+      />
+    </div>
    );
 };
