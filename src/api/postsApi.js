@@ -7,3 +7,5 @@ export const fetchPosts = async () => {
     }
 
     const data = await response.json();
+    return data;
+};
