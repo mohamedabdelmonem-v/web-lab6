@@ -51,3 +51,15 @@ getPosts();
         filterText={filterText} 
         onFilterChange={setFilterText} 
       />
+
+      {/* Main post list displaying filtered derived data */}
+      <PostList 
+        posts={filteredPosts} 
+        loading={state.loading} 
+        error={state.error} 
+      />
+    </div>
+  );
+}
+
+export default App;
