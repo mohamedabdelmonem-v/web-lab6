@@ -11,6 +11,9 @@ const Post = ({ title, body }) => {
     };
 
     return (
-
+    <div style={postStyle}>
+      <h3 style={{ marginTop: 0, textTransform: 'capitalize' }}>{title}</h3>
+      <p style={{ color: '#555' }}>{body}</p>
+    </div>
 
     );
