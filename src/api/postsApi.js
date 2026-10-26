@@ -4,3 +4,4 @@ export const fetchPosts = async () => {
 
     if (!response.ok) {
         throw new Error(`Failed to fetch posts: ${response.statusText}`);
+    }
