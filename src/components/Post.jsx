@@ -15,5 +15,7 @@ const Post = ({ title, body }) => {
       <h3 style={{ marginTop: 0, textTransform: 'capitalize' }}>{title}</h3>
       <p style={{ color: '#555' }}>{body}</p>
     </div>
-
     );
+};
+
+export default Post;
