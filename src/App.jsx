@@ -30,3 +30,9 @@ function App() {
 };
 
 getPosts();
+
+// Cleanup function to prevent state updates if unmounted
+    return () => {
+      isMounted = false;
+    };
+  }, []);
