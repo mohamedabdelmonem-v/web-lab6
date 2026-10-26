@@ -7,7 +7,9 @@ posts: [],
 
 // Pure Reducer function handling async state transitions
 export const postsReducer = (state, action) => {
+switch (action.type) {
 
 
 
+}
 };
