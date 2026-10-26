@@ -11,6 +11,20 @@ function App() {
   // 2. Manage local state for filter text input
   const [filterText, setFilterText] = useState('');
 
+// 3. Side effect for fetching data on mount with cleanup
+  useEffect(() => {
+    let isMounted = true;
 
-
+    const getPosts = async () => {
+      dispatch({ type: 'FETCH_START' });
+      try {
+        const data = await fetchPosts();
+        if (isMounted) {
+          dispatch({ type: 'FETCH_SUCCESS', payload: data });
+        }
+      } catch (err) {
+        if (isMounted) {
+          dispatch({ type: 'FETCH_ERROR', payload: err.message });
+        }
+      }
 };
