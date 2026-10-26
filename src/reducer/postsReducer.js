@@ -21,6 +21,11 @@ case 'FETCH_SUCCESS':
         posts: action.payload,
         error: null
       };
-
+case 'FETCH_ERROR':
+      return {
+        ...state,
+        loading: false,
+        error: action.payload
+      };
 }
 };
