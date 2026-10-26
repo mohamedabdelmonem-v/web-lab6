@@ -25,3 +25,5 @@ const PostList = ({ posts, loading, error }) => {
    </div>
   );
 };
+
+export default PostList;
