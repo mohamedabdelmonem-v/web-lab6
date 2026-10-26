@@ -14,7 +14,11 @@ const PostList = ({ posts, loading, error }) => {
   }
 
   return (
+   <div>
 
+
+    
+   </div>
 
 
   );
