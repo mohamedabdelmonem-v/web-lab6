@@ -27,5 +27,7 @@ case 'FETCH_ERROR':
         loading: false,
         error: action.payload
       };
+      default:
+      return state;
 }
 };
