@@ -9,3 +9,8 @@ const Post = ({ title, body }) => {
     marginBottom: '12px',
     backgroundColor: '#ffffff'
     };
+
+    return (
+
+
+    );
