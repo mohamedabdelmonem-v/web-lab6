@@ -9,7 +9,11 @@ const FilterForm = ({ filterText, onFilterChange }) => {
         placeholder="Filter posts by title..."
         value={filterText}
         onChange={(e) => onFilterChange(e.target.value)}
+        style={{
 
+
+
+        }}
 
 
 
