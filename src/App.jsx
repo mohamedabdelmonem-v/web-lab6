@@ -41,3 +41,13 @@ getPosts();
   const filteredPosts = state.posts.filter((post) =>
     post.title.toLowerCase().includes(filterText.toLowerCase())
   );
+
+  return (
+    <div style={{ maxWidth: '700px', margin: '30px auto', padding: '0 20px', fontFamily: 'Arial, sans-serif' }}>
+      <h1>Post Dashboard</h1>
+      
+      {/* Controlled filter form */}
+      <FilterForm 
+        filterText={filterText} 
+        onFilterChange={setFilterText} 
+      />
