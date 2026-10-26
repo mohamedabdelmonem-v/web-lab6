@@ -5,7 +5,9 @@ const FilterForm = ({ filterText, onFilterChange }) => {
    return (
     <div style={{ marginBottom: '20px' }}>
       <input
-
+        type="text"
+        placeholder="Filter posts by title..."
+        value={filterText}
 
 
 
