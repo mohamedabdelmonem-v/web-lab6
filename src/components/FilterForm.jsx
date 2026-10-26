@@ -21,3 +21,5 @@ const FilterForm = ({ filterText, onFilterChange }) => {
     </div>
    );
 };
+
+export default FilterForm;
