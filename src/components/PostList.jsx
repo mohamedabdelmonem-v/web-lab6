@@ -9,5 +9,7 @@ const PostList = ({ posts, loading, error }) => {
   if (error) {
     return <p style={{ color: 'red' }}>Error: {error}</p>;
   }
-
+  if (!posts || posts.length === 0) {
+    return <p>No posts found.</p>;
+  }
 };
