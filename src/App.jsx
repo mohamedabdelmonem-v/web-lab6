@@ -36,3 +36,8 @@ getPosts();
       isMounted = false;
     };
   }, []);
+
+  // 4. CRITICAL: Calculate Derived State during render (Do NOT store in state)
+  const filteredPosts = state.posts.filter((post) =>
+    post.title.toLowerCase().includes(filterText.toLowerCase())
+  );
